@@ -11,7 +11,7 @@ function App() {
   const getWeather = async () => {
     console.log(place)
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/weather/${place}`, {
+      const response = await fetch(`https://weather-weather-backend.vercel.app/api/weather/${place}`, {
         method: "GET",
         headers: {
           'Content-Type': 'application/json',
